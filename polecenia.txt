@@ -1,0 +1,90 @@
+Tworzy folder
+mkdir {nazwa katalogu}
+
+Wejście w podany katalog/folder
+cd {nazwa katalogu}
+
+Wyjście z katalogu 
+cd ../
+
+Listowanie zawartości katalogu
+ls
+
+Listowanie zawartości katalogu z "widokiem" uprawnień
+ls -la
+ll
+
+Tworzy plik o podanej nazwie
+touch {nazwa pliku}.{format pliku}
+
+Kopiowanie plików
+cp {nazwa kopiowanego pliku} {nazwa pliku docelowego}
+
+Edytowanie plików np. za pomocą edytora nano
+nano {nazwa pliku}
+
+Usuwanie pliku 
+rm {nazwa pliku}
+
+Usuwanie katalogu z zawartością
+rm -Rf {nazwa folderu}
+
+Sprawdzanie wersji "Ubuntu"
+lsb_release -a
+
+Aktualizacja (sudo - zwiększenie uprawnień dla root użytkownika - należy podać hasło)
+sudo apt update
+
+Instalacja pakietów
+sudo apt install {nazwa pakietu/programu}
+sudo apt install {nazwa pakietu/programu} -y //instalacja z potwierdzeniem
+----------------------------------------------------------------------------------------
+-------------Java------------------
+----------------------------------------------------------------------------------------
+Instalacja Java
+sudo apt install default-jdk  //java development kit
+sudo apt install default-jre  //java run edition
+----------------------------------------------------------------------------------------
+-------------GIT------------------
+----------------------------------------------------------------------------------------
+Instalacja git
+sudo apt install git
+
+Po instalacji GIT-a, ustawiamy nazwę użytkownika oraz email
+git config --global user.name "Mateusz Warych"
+git config --global user.email "mateusz_warych@wp.pl"
+
+Inicjalizacja Gita
+git init
+
+Ustawienie Brancha (gałęzi) main
+git branch -M main
+
+Dodawanie repozytorium
+git remote add origin https://github.com/MateuszWarych1/FirstAppRep.git
+
+Dodawanie plików do opisu zmian (commitu)
+git add
+git add -A
+
+Opis zmian
+git commit -m "opis zmian"
+
+Wypychanie do repozytorium na wybraną gałąź(branch)
+git push origin main
+
+Stworzenie nowej gałęzi(branchu)
+git checkout -b {nazwa gałęzi}
+git checkout -b lab1
+
+git push origin lab1
+
+Wypychanie zmian na wybraną gałąź 
+git push origin lab1
+
+
+----------------------------------------------------------------------------------------
+Generowanie klucza prywatnego i publicznego 
+ssh-keygen
+
+
